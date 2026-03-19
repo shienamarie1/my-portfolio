@@ -3,44 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Shiena Marie Cabeling - Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <h1>My Portfolio</h1>
+      <h1>Shiena Marie Cabeling</h1>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="theme-toggle">🌙</button>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Welcome!</h2>
-      <p>This is my portfolio website built with HTML, CSS, and GitHub Pages.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h2>Hello, I'm Shiena Marie</h2>
+      <p>Frontend Developer | Web Designer | Tech Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
     </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I create responsive, accessible, and interactive websites using HTML, CSS, JavaScript, and AI tools. I enjoy solving problems and building projects that are functional and visually appealing.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
       <div class="project-cards">
         <div class="card">
-          <h3>Project One</h3>
-          <p>Brief description of project one.</p>
+          <img src="images/project1.jpg" alt="Project 1 Screenshot">
+          <h3>Portfolio Website</h3>
+          <p>A modern portfolio website built with HTML, CSS, and JS.</p>
+          <a href="https://github.com/shienamarie1/my-portfolio" target="_blank" class="btn">View Code</a>
         </div>
         <div class="card">
-          <h3>Project Two</h3>
-          <p>Brief description of project two.</p>
+          <img src="images/project2.jpg" alt="Project 2 Screenshot">
+          <h3>Task Manager App</h3>
+          <p>A JavaScript web app for managing daily tasks and to-dos.</p>
+          <a href="#" class="btn">View Demo</a>
         </div>
       </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-message"></p>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 My Portfolio</p>
+    <p>&copy; 2026 Shiena Marie Cabeling. All Rights Reserved.</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
